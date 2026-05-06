@@ -3,13 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <title>Progetti</title>
+
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+      background-color: #f9f9f9;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      text-decoration: none;
+      color: black;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-title {
+      padding: 1rem;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .home {
+      display: block;
+      text-align: center;
+      margin-bottom: 2rem;
+      text-decoration: none;
+      color: #555;
+    }
+  </style>
 </head>
+
 <body>
 
+  <a href="index.html" class="home">← Torna alla Home</a>
+
   <h1>Progetti</h1>
-  <a href="Progetto2.html">Scorci sul mondo animale e vegetale</a>|
-  <br>
-  <a href="Progetto1.html">Unstable Seacorn</a>|
+
+  <div class="grid">
+
+    <a href="Progetto2.html" class="card">
+      <img src="images/progetto2.png" alt="Scorci sul mondo animale">
+      <div class="card-title">
+        Scorci sul mondo animale e vegetale
+      </div>
+    </a>
+
+    <a href="Progetto1.html" class="card">
+      <img src="images/unstable-seacorn.png" alt="Unstable Seacorn">
+      <div class="card-title">
+        Unstable Seacorn
+      </div>
+    </a>
+
+  </div>
 
 </body>
 </html>
