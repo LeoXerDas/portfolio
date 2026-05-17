@@ -1,31 +1,107 @@
 <!DOCTYPE html>
 <html lang="it">
-<style>
-  .centrato {
-    text-align: center;
-  }
-</style>
-  
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio - Leonardo Serantoni</title>
+  
+  <!-- Importiamo un font moderno e leggero da Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600&display=swap" rel="stylesheet">
+
   <style>
-    body { font-family: Lexend; max-width: 800px; margin: auto; padding: 2rem; }
-    h1 { text-align: center; }
-    img { max-width: 100%; margin-bottom: 1rem; }
-    .project { margin-bottom: 2rem; }
+    /* Reset e stili globali */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body { 
+      font-family: 'Lexend', sans-serif; 
+      max-width: 800px; 
+      margin: auto; 
+      padding: 3rem 1.5rem; 
+      background-color: #f9fbfd; /* Sfondo leggermente off-white per stancare meno la vista */
+      color: #2d3748; /* Testo grigio scuro, più morbido del nero puro */
+      line-height: 1.6;
+    }
+
+    /* Header e Testi */
+    header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    h1 { 
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: #1a202c;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      color: #718096;
+      font-weight: 300;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+    }
+
+    /* Il nuovo Bottone Progetti */
+    .btn-container {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .btn-progetti {
+      display: inline-block;
+      padding: 0.8rem 2rem;
+      background-color: #3182ce; /* Un blu professionale e vivido */
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 50px; /* Bordi arrotondati stile moderno */
+      box-shadow: 0 4px 6px -1px rgba(49, 130, 206, 0.2), 0 2px 4px -1px rgba(49, 130, 206, 0.06);
+      transition: all 0.3s ease; /* Animazione fluida al passaggio del mouse */
+    }
+
+    .btn-progetti:hover {
+      background-color: #2b6cb0; /* Blu leggermente più scuro al passaggio del mouse */
+      transform: translateY(-2px); /* Effetto sollevamento */
+      box-shadow: 0 7px 14px -3px rgba(49, 130, 206, 0.3), 0 4px 6px -2px rgba(49, 130, 206, 0.1);
+    }
+
+    /* Immagine in evidenza */
+    .hero-image-container {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    img { 
+      max-width: 100%; 
+      height: auto;
+      border-radius: 12px; /* Angoli smussati per l'immagine */
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    }
   </style>
 </head>
 <body>
-  <h1>Leonardo Serantoni (Kizan)</h1>
-  <p style="text-align: center;">Autore e illustratore</p>
-  <div style="text-align: center;">
-  <a href="progetti.html">Progetti</a>
-</div>
-  <img src="mallardDuck.jpg">
-  <div class="centrato">
-  
- 
+
+  <header>
+    <h1>Leonardo Serantoni (Kizan)</h1>
+    <p class="subtitle">Autore e illustratore</p>
+  </header>
+
+  <div class="btn-container">
+    <a href="progetti.html" class="btn-progetti">Visualizza i miei Progetti</a>
+  </div>
+
+  <div class="hero-image-container">
+    <img src="mallardDuck.jpg" alt="Illustrazione Mallard Duck">
+  </div>
+
 </body>
 </html>
